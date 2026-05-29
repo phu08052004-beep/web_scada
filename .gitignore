@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+scada_web/frontend/node_modules/
+
+# Production/Build outputs
+dist/
+scada_web/frontend/dist/
+
+# Local databases and caches
+*.db
+*.sqlite
+scada_data.db
+scada_web/backend/scada_data.db
+scada_web/backend/__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+scada_web/.env
+scada_web/backend/.env
+scada_web/frontend/.env
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
