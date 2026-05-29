@@ -20,6 +20,10 @@ async def startup_event():
     init_db()
     # In a real scenario, start background tasks for PLC/MQTT here
 
+@app.get("/")
+def read_root():
+    return {"status": "running", "message": "SCADA Web API is active"}
+
 @app.get("/api/dashboard/state")
 def get_state():
     return global_state.get_full_state()
